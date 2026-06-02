@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Alexander Sytov - Resume</title>
+    <style>
+      @page {
+        size: A4;
+        margin: 10mm;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        color: #172025;
+        background: #ffffff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 9.3pt;
+        line-height: 1.36;
+      }
+
+      a {
+        color: #0d6b73;
+        text-decoration: none;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        margin-top: 0;
+      }
+
+      h1 {
+        margin-bottom: 2mm;
+        font-size: 25pt;
+        line-height: 1;
+        letter-spacing: 0;
+      }
+
+      h2 {
+        margin: 0 0 2.3mm;
+        color: #0d6b73;
+        font-size: 9pt;
+        letter-spacing: 0;
+        text-transform: uppercase;
+      }
+
+      h3 {
+        margin: 0 0 1mm;
+        font-size: 10pt;
+        line-height: 1.2;
+      }
+
+      p {
+        margin-bottom: 2.3mm;
+      }
+
+      ul {
+        margin: 0;
+        padding-left: 4.5mm;
+      }
+
+      li {
+        margin-bottom: 1.6mm;
+      }
+
+      .page {
+        display: grid;
+        grid-template-columns: 1fr 54mm;
+        gap: 8mm;
+      }
+
+      .header {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 60mm;
+        gap: 8mm;
+        padding-bottom: 5mm;
+        border-bottom: 1px solid #d9e2dc;
+      }
+
+      .role {
+        margin-bottom: 3mm;
+        color: #0d6b73;
+        font-size: 11pt;
+        font-weight: 700;
+      }
+
+      .summary {
+        max-width: 136mm;
+        margin-bottom: 0;
+        color: #34423c;
+        font-size: 10pt;
+      }
+
+      .contact {
+        display: grid;
+        gap: 1.4mm;
+        align-content: start;
+        font-size: 8.7pt;
+        text-align: right;
+      }
+
+      .section {
+        padding-top: 4mm;
+      }
+
+      .item {
+        break-inside: avoid;
+        margin-bottom: 3mm;
+        padding-bottom: 3mm;
+        border-bottom: 1px solid #edf2ef;
+      }
+
+      .item:last-child {
+        border-bottom: 0;
+      }
+
+      .meta {
+        margin-bottom: 1mm;
+        color: #68766f;
+        font-size: 8.2pt;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .sidebar {
+        padding-top: 4mm;
+      }
+
+      .sidebar .box {
+        margin-bottom: 4mm;
+        padding: 3.2mm;
+        background: #f4f7f5;
+        border: 1px solid #d9e2dc;
+        border-radius: 2mm;
+        break-inside: avoid;
+      }
+
+      .skill-list {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.5mm;
+        padding-left: 0;
+        list-style: none;
+      }
+
+      .skill-list li {
+        margin: 0;
+        padding: 1mm 1.8mm;
+        background: #ffffff;
+        border: 1px solid #d9e2dc;
+        border-radius: 1.5mm;
+        font-size: 8.2pt;
+        font-weight: 700;
+      }
+
+      .link-line {
+        margin-bottom: 1.6mm;
+      }
+
+      .compact {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header class="header">
+        <div>
+          <h1>Alexander Sytov</h1>
+          <p class="role">Business Automation Engineer (Low-Code &amp; AI)</p>
+          <p class="summary">
+            I create complex integrations with n8n, Make, Google Apps Script, REST APIs,
+            and AI. Over the past two years, I have completed 10+ commercial projects in
+            real estate and marketing, including cross-posting systems, CRM bots with data
+            parsing, and AI-assisted business workflows. My C# and JavaScript background
+            helps me go beyond standard constructors and build reliable custom architecture.
+          </p>
+        </div>
+        <address class="contact">
+          <a href="mailto:muksaflash@gmail.com">muksaflash@gmail.com</a>
+          <a href="tel:+37493692970">+374 (93) 69-29-70</a>
+          <a href="https://t.me/muksaflash">Telegram: @muksaflash</a>
+          <a href="https://github.com/muksaflash">github.com/muksaflash</a>
+          <a href="https://www.linkedin.com/in/aleksandr-sytov-b4832b259">LinkedIn</a>
+          <span>Yerevan, Armenia</span>
+        </address>
+      </header>
+
+      <section class="section">
+        <h2>Experience</h2>
+        <article class="item">
+          <p class="meta">September 2024 - Present</p>
+          <h3>Freelance Developer (Automation)</h3>
+          <ul>
+            <li>Built a cross-posting automation system for Instagram content adaptation, media processing via Cloudinary, and scheduling to 5-10 social networks through the PostMyPost API.</li>
+            <li>Managed routing and prompts through a Google Sheets interface; reduced distribution time from 2 hours to 15 minutes per material.</li>
+            <li>Created StyleWeaver, a SaaS-style app mockup and product experiment.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <p class="meta">May 2024 - September 2024</p>
+          <h3>Low-Code Developer - Nedvex</h3>
+          <ul>
+            <li>Created a Telegram bot on n8n that helps 50+ agents select real estate lots daily.</li>
+            <li>Implemented lot filtering logic from XML exports and analytics for user actions.</li>
+            <li>Delivered 10+ successful automation projects for the company.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <p class="meta">May 2022 - May 2024</p>
+          <h3>Freelance Developer &amp; .NET Engineer</h3>
+          <ul>
+            <li>Developed the C# ASP.NET Core backend for HashtagHelp, a SaaS service for automatic hashtag funnel building.</li>
+            <li>Designed REST API architecture, MySQL database with EF Core, and asynchronous Google Services integrations.</li>
+          </ul>
+        </article>
+        <article class="item">
+          <p class="meta">September 2020 - July 2022</p>
+          <h3>Electronics Engineer, Embedded Software Developer - Royal Quest</h3>
+          <ul>
+            <li>Developed prototypes of electronic devices and programmed microcontrollers in C.</li>
+          </ul>
+        </article>
+
+        <h2>Education</h2>
+        <p class="compact">
+          <strong>Computer Science and Engineering</strong>, Moscow Technical University of
+          Communications and Informatics. Graduated in 2024.
+        </p>
+      </section>
+
+      <aside class="sidebar">
+        <section class="box">
+          <h2>Selected Links</h2>
+          <p class="link-line"><a href="https://github.com/Muksaflash/CrosspostingInstGAS">CrosspostingInstGAS</a></p>
+          <p class="link-line"><a href="https://instagram-automation-76kati656a-uc.a.run.app/">Cross-posting interface</a></p>
+          <p class="link-line"><a href="https://styleweaver-692930870929.us-central1.run.app/">StyleWeaver demo</a></p>
+          <p class="link-line"><a href="https://github.com/Muksaflash/APIInclusive">APIInclusive</a></p>
+        </section>
+
+        <section class="box">
+          <h2>Automation &amp; Low-Code</h2>
+          <ul class="skill-list">
+            <li>n8n</li>
+            <li>Make</li>
+            <li>GAS</li>
+            <li>REST API</li>
+            <li>Webhooks</li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2>Programming</h2>
+          <ul class="skill-list">
+            <li>C#/.NET</li>
+            <li>JavaScript</li>
+            <li>ASP.NET Core</li>
+            <li>MySQL</li>
+            <li>EF Core</li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2>AI &amp; Tech</h2>
+          <ul class="skill-list">
+            <li>OpenAI API</li>
+            <li>Cloudinary</li>
+            <li>Cursor</li>
+            <li>Git/GitHub</li>
+            <li>Google Cloud</li>
+          </ul>
+        </section>
+
+        <section class="box">
+          <h2>Languages</h2>
+          <p class="compact"><strong>English:</strong> Intermediate to Upper-Intermediate (B1+/B2)</p>
+          <p class="compact"><strong>Russian:</strong> Native (C2)</p>
+        </section>
+      </aside>
+    </main>
+  </body>
+</html>
