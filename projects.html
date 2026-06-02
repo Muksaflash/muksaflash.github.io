@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project Case Studies | Alexander Sytov</title>
+    <meta
+      name="description"
+      content="Project case studies by Alexander Sytov: Nedvex Telegram knowledge base bot and AI mentor bot for an entrepreneur club."
+    >
+    <meta property="og:title" content="Project Case Studies | Alexander Sytov">
+    <meta property="og:description" content="Automation and AI case studies converted from project notes into a web portfolio page.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/doc-visual-08.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Alexander Sytov home">
+        <span class="brand-mark">AS</span>
+        <span>Alexander Sytov</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="index.html#experience">Experience</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="projects.html" aria-current="page">Case studies</a>
+        <a href="index.html#contacts">Contacts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Project Cases</p>
+          <h1>Automation systems for real business workflows</h1>
+          <p class="lead">
+            These case studies are adapted from project notes and rewritten in English for a
+            portfolio format. They focus on business context, architecture, and delivered value.
+          </p>
+        </div>
+        <figure class="wide-visual">
+          <img src="assets/doc-visual-08.png" alt="Make automation scenario map with Google Sheets, OpenAI, Telegram, and reporting modules">
+        </figure>
+      </section>
+
+      <section class="case-study">
+        <div class="case-copy">
+          <p class="eyebrow">Nedvex / Real Estate</p>
+          <h2>Telegram Knowledge Base Bot</h2>
+          <p>
+            The bot is used by real estate agents selling units in Nedvex resort complexes. It
+            gives agents fast access to project materials, lot selection, manager contacts, and
+            navigation inside Telegram.
+          </p>
+          <div class="case-points">
+            <article>
+              <h3>Business task</h3>
+              <p>
+                Help agents quickly find available lots, open project information, and move from
+                Telegram to the correct project pages without manual searching.
+              </p>
+            </article>
+            <article>
+              <h3>Implementation</h3>
+              <p>
+                Built on n8n and hosted on the client's server. The bot reads XML feeds from the
+                customer's website, applies custom filtering and grouping logic, and uses
+                workflow static data as a temporary storage layer.
+              </p>
+            </article>
+            <article>
+              <h3>Analytics</h3>
+              <p>
+                User actions and link transitions are logged into a dedicated analytics chat.
+                Daily activity reports are sent automatically so the team can see how agents use
+                the bot.
+              </p>
+            </article>
+          </div>
+          <div class="link-row">
+            <a href="https://t.me/Nedvex_partners_bot" target="_blank" rel="noreferrer">Test bot</a>
+            <a href="index.html#contacts">Contact me</a>
+          </div>
+        </div>
+        <div class="visual-grid">
+          <figure>
+            <img src="assets/doc-visual-01.png" alt="Nedvex Telegram bot menu with project material and lot selection buttons">
+            <figcaption>Main project menu</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-02.png" alt="Nedvex Telegram bot budget filter buttons">
+            <figcaption>Lot budget filtering</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-03.png" alt="Telegram analytics channel showing bot user action logs">
+            <figcaption>Action analytics chat</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-04.png" alt="Large n8n workflow map for the Nedvex Telegram bot">
+            <figcaption>n8n workflow architecture</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-study reverse">
+        <div class="case-copy">
+          <p class="eyebrow">Entrepreneur Club / AI</p>
+          <h2>AI Mentor Bot</h2>
+          <p>
+            This Telegram bot supports a mentor in the Proryv entrepreneur club. It analyzes
+            messages from club chats, answers weekly reports, declarations, and common
+            questions, and produces structured recommendations.
+          </p>
+          <div class="case-points">
+            <article>
+              <h3>Business task</h3>
+              <p>
+                Reduce repetitive mentor workload while keeping responses specific, direct, and
+                based on the participant's latest report and declaration.
+              </p>
+            </article>
+            <article>
+              <h3>Implementation</h3>
+              <p>
+                Built on Make.com with ChatGPT, Google Apps Script, Google Sheets, Telegram, and
+                Make's internal database. Reports and declarations are duplicated to Google
+                Sheets so past data can be reviewed and corrected.
+              </p>
+            </article>
+            <article>
+              <h3>Output</h3>
+              <p>
+                The bot answers in chat with recommendations and sends the mentor a separate
+                internal report with more detailed analysis of the participant's progress.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="visual-grid">
+          <figure>
+            <img src="assets/doc-visual-05.png" alt="Telegram message with AI mentor recommendations in Russian">
+            <figcaption>AI recommendation example</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-06.png" alt="Make scenario list for statement processing automations">
+            <figcaption>Scenario modules</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-07.png" alt="Make scenario showing Telegram, OpenAI, tools, and router modules">
+            <figcaption>Message analysis chain</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-08.png" alt="Make interactive scenario map for report and statement automation">
+            <figcaption>Interactive scenario map</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">More Work</p>
+          <h2>Additional public links</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="https://github.com/Muksaflash/CrosspostingInstGAS" target="_blank" rel="noreferrer">CrosspostingInstGAS</a>
+          <a href="https://instagram-automation-76kati656a-uc.a.run.app/" target="_blank" rel="noreferrer">Cross-posting interface</a>
+          <a href="https://styleweaver-692930870929.us-central1.run.app/" target="_blank" rel="noreferrer">StyleWeaver</a>
+          <a href="https://github.com/Muksaflash/APIInclusive" target="_blank" rel="noreferrer">APIInclusive</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

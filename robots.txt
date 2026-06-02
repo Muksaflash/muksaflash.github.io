@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://muksaflash.github.io/sitemap.xml
