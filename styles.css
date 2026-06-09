@@ -163,6 +163,7 @@ a:hover {
 .split-section > *,
 .case-study > *,
 .project-grid > *,
+.service-grid > *,
 .skill-columns > *,
 .compact-grid > *,
 .contact-grid > * {
@@ -336,11 +337,18 @@ h3 {
   gap: 18px;
 }
 
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+}
+
 .project-card,
 .timeline-item,
 .skill-columns article,
 .compact-grid article,
-.case-points article {
+.case-points article,
+.service-grid article {
   padding: clamp(20px, 3vw, 28px);
   background: var(--panel);
   border: 1px solid var(--line);
@@ -477,6 +485,26 @@ h3 {
   color: #d4e3dc;
 }
 
+.background-note {
+  margin-top: 12px;
+  color: #a9c6bc !important;
+  font-size: 0.92rem;
+}
+
+.cta-section {
+  background: var(--panel-alt);
+}
+
+.cta-section .section-heading {
+  margin-bottom: 22px;
+}
+
+.cta-section .section-heading p:not(.eyebrow) {
+  max-width: 760px;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
 .compact-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -599,6 +627,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .service-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .feature-card {
     min-height: 0;
   }
@@ -633,6 +665,7 @@ h3 {
   }
 
   .metric-band,
+  .service-grid,
   .skill-columns,
   .compact-grid,
   .visual-grid,
