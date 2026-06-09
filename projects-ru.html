@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Кейсы проектов | Александр Сытов</title>
+    <meta
+      name="description"
+      content="Кейсы проектов Александра Сытова: Telegram knowledge base bot для Nedvex и AI-наставник для клуба предпринимателей."
+    >
+    <meta property="og:title" content="Кейсы проектов | Александр Сытов">
+    <meta property="og:description" content="Кейсы automation и AI-проектов, адаптированные из проектного документа в портфолио.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/doc-visual-08.png">
+    <link rel="alternate" hreflang="en" href="https://muksaflash.github.io/projects.html">
+    <link rel="alternate" hreflang="ru" href="https://muksaflash.github.io/projects-ru.html">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="ru.html" aria-label="Главная страница Александра Сытова">
+        <span class="brand-mark">AS</span>
+        <span>Александр Сытов</span>
+      </a>
+      <div class="header-actions">
+        <nav class="site-nav" aria-label="Основная навигация">
+          <a href="ru.html#experience">Опыт</a>
+          <a href="ru.html#projects">Проекты</a>
+          <a href="projects-ru.html" aria-current="page">Кейсы</a>
+          <a href="ru.html#contacts">Контакты</a>
+        </nav>
+        <nav class="language-switch" aria-label="Выбор языка">
+          <a href="projects.html">EN</a>
+          <a href="projects-ru.html" aria-current="page">RU</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div>
+          <p class="eyebrow">Кейсы проектов</p>
+          <h1>Системы автоматизации для реальных бизнес-процессов</h1>
+          <p class="lead">
+            Эти кейсы адаптированы из проектных заметок и оформлены как портфолио:
+            с фокусом на бизнес-контекст, архитектуру и результат.
+          </p>
+        </div>
+        <figure class="wide-visual">
+          <img src="assets/doc-visual-08.png" alt="Карта Make-сценария с Google Sheets, OpenAI, Telegram и отчетами">
+        </figure>
+      </section>
+
+      <section class="case-study">
+        <div class="case-copy">
+          <p class="eyebrow">Nedvex / недвижимость</p>
+          <h2>Telegram Knowledge Base Bot</h2>
+          <p>
+            Бот используется агентами, продающими недвижимость в курортных комплексах Nedvex.
+            Он дает быстрый доступ к материалам проектов, подбору лотов, контактам менеджеров
+            и навигации внутри Telegram.
+          </p>
+          <div class="case-points">
+            <article>
+              <h3>Бизнес-задача</h3>
+              <p>
+                Помочь агентам быстро находить доступные лоты, открывать информацию по проектам
+                и переходить из Telegram на нужные страницы без ручного поиска.
+              </p>
+            </article>
+            <article>
+              <h3>Реализация</h3>
+              <p>
+                Бот построен на n8n и размещен на сервере клиента. Он читает XML-фиды сайта,
+                применяет кастомную фильтрацию и группировку лотов, а для временного хранения
+                использует workflow static data.
+              </p>
+            </article>
+            <article>
+              <h3>Аналитика</h3>
+              <p>
+                Действия пользователей и переходы по ссылкам логируются в отдельный чат аналитики.
+                Ежедневно отправляется отчет по активности, чтобы команда видела, как агенты
+                используют бота.
+              </p>
+            </article>
+          </div>
+          <div class="link-row">
+            <a href="https://t.me/Nedvex_partners_bot" target="_blank" rel="noreferrer">Тестовый бот</a>
+            <a href="ru.html#contacts">Связаться</a>
+          </div>
+        </div>
+        <div class="visual-grid">
+          <figure>
+            <img src="assets/doc-visual-01.png" alt="Меню Telegram-бота Nedvex с материалами и подбором лота">
+            <figcaption>Главное меню проекта</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-02.png" alt="Фильтр бюджета в Telegram-боте Nedvex">
+            <figcaption>Фильтрация лотов по бюджету</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-03.png" alt="Чат аналитики Telegram с логами действий пользователей">
+            <figcaption>Чат аналитики действий</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-04.png" alt="Большая n8n-схема Telegram-бота Nedvex">
+            <figcaption>Архитектура workflow в n8n</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="case-study reverse">
+        <div class="case-copy">
+          <p class="eyebrow">Клуб предпринимателей / AI</p>
+          <h2>AI-наставник</h2>
+          <p>
+            Telegram-бот помогает наставнику в клубе предпринимателей "Прорыв". Он анализирует
+            сообщения из чатов клуба, отвечает на еженедельные отчеты, декларации и популярные
+            вопросы, а также формирует структурированные рекомендации.
+          </p>
+          <div class="case-points">
+            <article>
+              <h3>Бизнес-задача</h3>
+              <p>
+                Снизить объем повторяющейся работы наставника, сохранив конкретность ответов
+                и привязку к последнему отчету или декларации участника.
+              </p>
+            </article>
+            <article>
+              <h3>Реализация</h3>
+              <p>
+                Система построена на Make.com с ChatGPT, Google Apps Script, Google Sheets,
+                Telegram и встроенной базой данных Make. Отчеты и декларации дублируются
+                в Google Sheets, чтобы прошлые данные было удобно просматривать и исправлять.
+              </p>
+            </article>
+            <article>
+              <h3>Результат</h3>
+              <p>
+                Бот отвечает в чат рекомендациями и отправляет наставнику отдельный внутренний
+                отчет с более подробной аналитикой прогресса участника.
+              </p>
+            </article>
+          </div>
+        </div>
+        <div class="visual-grid">
+          <figure>
+            <img src="assets/doc-visual-05.png" alt="Сообщение Telegram с рекомендациями AI-наставника">
+            <figcaption>Пример AI-рекомендаций</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-06.png" alt="Список Make-сценариев для обработки отчетов">
+            <figcaption>Модули сценариев</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-07.png" alt="Make-сценарий Telegram, OpenAI, tools и router">
+            <figcaption>Цепочка анализа сообщений</figcaption>
+          </figure>
+          <figure>
+            <img src="assets/doc-visual-08.png" alt="Интерактивная карта Make-сценария для отчетов и деклараций">
+            <figcaption>Интерактивная схема сценария</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section contact-section">
+        <div class="section-heading">
+          <p class="eyebrow">Еще проекты</p>
+          <h2>Дополнительные публичные ссылки</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="https://github.com/Muksaflash/CrosspostingInstGAS" target="_blank" rel="noreferrer">CrosspostingInstGAS</a>
+          <a href="https://instagram-automation-76kati656a-uc.a.run.app/" target="_blank" rel="noreferrer">Интерфейс кросспостинга</a>
+          <a href="https://styleweaver-692930870929.us-central1.run.app/" target="_blank" rel="noreferrer">StyleWeaver</a>
+          <a href="https://github.com/Muksaflash/APIInclusive" target="_blank" rel="noreferrer">APIInclusive</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
